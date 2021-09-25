@@ -1,0 +1,47 @@
+a {
+    font-family: 'Montserrat', sans-serif;
+    color:#00d4ff;
+  }
+  p{
+    color:#ff0000;
+  }
+  input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    input[type=email], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      input[type=email]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+   
+    .clearfix
+    {
+        float:right;
+    }
+    /* card height and width */
+  .card-dimension{
+    width:500px;
+  }
+  /* position of the card in the center */
+  .card-centered{
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  
+  

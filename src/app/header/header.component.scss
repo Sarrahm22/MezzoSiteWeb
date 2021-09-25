@@ -1,0 +1,41 @@
+.container-fluid{
+    background: linear-gradient(90deg, rgba(0,212,255,1) 30%, rgba(54,54,203,1) 78%);
+
+}
+/* navigation bar */
+.navbar-brand img {
+    margin: 0 !important;
+    width:190px ;
+    height:70px;
+}
+.navbar{
+    background-color: transparent;
+    background: none;
+    padding: 0;
+   
+}
+.navbar-nav a {
+    padding: 14px 20px;
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.navbar-nav a:hover{
+    opacity: 0.8;
+}
+.nav-icon  {
+    font-size: 15px;
+    color: #fff !important;
+    display: inline-block;
+    width: 25px;
+    margin-left: 8px;
+    height: 25px;
+    line-height: 25px;
+}
+.nav-icon:hover {
+    opacity: 0.8;
+}
+.nav-icons{
+  margin-right: 15px;
+}

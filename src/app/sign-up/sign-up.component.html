@@ -1,0 +1,73 @@
+
+<div class ="container col-lg-5 col-md-offset-4 col-md-8 col-md-offset-2 col-xs-4 card-dimension ">
+    <div class="card card-centered ">
+    <div class="card-header card text-white bg-info ">
+        Connexion
+    </div>
+    <div class="card-body">
+    <form (ngSubmit)="submitForm()"  #signupForm="ngForm" method="post"> 
+    <div class="row">
+        <div class="col-md-12">
+        <input type="text" class="form-control" name="firstname" placeholder="Prénom" [(ngModel)]="firstname" #firstnameInput="ngModel" required>
+        <div class="help is-error" *ngIf="firstnameInput.invalid && firstnameInput.touched">
+        <p>   Le prénom est obligatoire</p> 
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <input type="text" class="form-control" name="lastname" placeholder="Nom" [(ngModel)]="lastname" #lastnameInput="ngModel"  required>
+        <div class="help is-error" *ngIf="lastnameInput.invalid && lastnameInput.touched">
+            <p>   Le nom est obligatoire</p> 
+        </div>         
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <input type="email" class="form-control" name="email" placeholder="Email" [(ngModel)]="email" #emailInput="ngModel" required email>
+        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
+            <p>   Entrez votre email correctement</p> 
+        </div>         
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <input type="text" class="form-control" name="job" placeholder="Statut Social" [(ngModel)]="job" #jobInput="ngModel" required>
+        <div class="help is-error" *ngIf="jobInput.invalid && jobInput.touched">
+            <p>   Le Statut social est obligatoire</p> 
+        </div>         
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <input type="text" class="form-control" name="password" placeholder="Mot de passe" [(ngModel)]="password" #passwordInput="ngModel" required>
+        <div class="help is-error" *ngIf="passwordInput.invalid && passwordInput.touched">
+            <p>   Le mot de passe est obligatoire</p> 
+        </div>             
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        
+            <input type="text" class="form-control" name="password2" placeholder="Rétappez votre mot de passe" [(ngModel)]="password2" #password2Input="ngModel"  required>
+            <div class="help is-error" *ngIf="password2Input.invalid && password2Input.touched">
+                <p>   Il est obligatoire de retapper le mot de passe</p> 
+            </div> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <a href="#"class="title-link"><u>Mot de passe oublié ?</u></a>
+    </div>
+    <div class="col-lg-6">
+        <button type="submit" class="btn btn-info clearfix"  [disabled]="signupForm.invalid">Connexion</button>
+    </div>
+
+    </div>
+    
+    
+    </form>
+    </div>
+    </div>
+    </div>    
